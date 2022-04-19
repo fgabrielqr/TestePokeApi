@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+body{
+    background-color: #f5f7fa
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -41,3 +45,132 @@
     left: 138px;
     top: 12px;
 }
+
+.search {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    
+  }
+  
+  .search .search-input,
+  .search .search-button {
+    border: 0%;
+    padding: 1em;
+  }
+  
+  .search .search-input {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  
+  .search .search-button {
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: rgb(24, 139, 233);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .pokemon {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    opacity: 1;
+    color: white; 
+    border-radius: 5px;
+    margin-top: 25px;
+  }
+  
+  .pokemon .pokemon-picture {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+  
+  .pokemon .pokemon-picture img {
+    width: 100%;
+  }
+  
+  .pokemon .pokemon-info {
+    width: 100%;
+    background-color: #2494e9;
+    border-radius: 5px;
+    flex: 2;
+  }
+  
+  .pokemon-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  
+  
+  .pokemon-info .name,
+  .pokemon-info .skill,
+  .pokemon-info .weight,
+  .pokemon-info .height  {
+    width: 100%;
+    padding: .5em .2em;
+    font-size: 1.7em;
+  }
+  
+  .pokemon-info .name {
+    font-size: 2.5em;
+    text-align: center;
+    color: #636363; 
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .pokemon-info .number{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  .pokemon-info .skill{
+    text-align: justify;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .pokemon-info .weight,
+  .pokemon-info .height {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  @media(min-width: 758px) {
+    .pokemon { 
+      flex-direction: row;  
+    }
+  }
+  
+  @keyframes fadeEfect{
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
